@@ -1,5 +1,5 @@
 import { APIVideo } from './api-types/APIVideo';
-import strip_html from 'string-strip-html';
+import { stripHtml } from 'string-strip-html';
 import { HAnimeAPI } from './HAnimeAPI';
 
 export class HAnimeVideo {
@@ -70,7 +70,7 @@ export class HAnimeVideo {
     }
 
     public get description() {
-        return strip_html(this.video.hentai_video.description);
+        return stripHtml(this.video.hentai_video.description).result;
     }
 
     public get tags() {
