@@ -22,11 +22,11 @@ export class HAnimeVideo {
     }
 
     public get poster_url() {
-        return HAnimeAPI.get_image_url(this.video.hentai_video.poster_url, 100, 'cps')
+        return this.video.hentai_video.poster_url;
     }
 
     public get cover_url() {
-        return HAnimeAPI.get_image_url(this.video.hentai_video.cover_url, 100, 'cps')
+        return this.video.hentai_video.cover_url;
     }
 
     public get video_url() {

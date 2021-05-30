@@ -25,7 +25,9 @@ export type APIVideo = {
         id: number,
         text: APITags,
         count: number,
-        description: string
+        description: string,
+        wide_image_url: string,
+        tall_image_url: string
     }[],
     hentai_video: APIVideoInfo,
     hentai_video_storyboards: {

@@ -99,7 +99,17 @@ export class HAnimeAPI {
             return `https://i1.wp.com/archived-assets-${segment}.imageg.top${real_path}`;
         }
 
-        return cdn == 'cps' ? `https://i1.wp.com/static-assets.droidbuzz.top${real_path}` : `https://i1.wp.com/dynamic-assets.imageg.top${real_path}`;
+        if (cdn === 'cps') {
+            const domains = ['https://i0.wp.com/ba.alphafish.top', 'https://i1.wp.com/ba.apperoni.top', 'https://i2.wp.com/ba.balley.top'];
+
+            return domains[Math.floor(Math.random()) * domains.length] + real_path;
+        }
+
+        let domain = 'https://i1.wp.com/da.imageg.top';
+        if (cdn === 'default-avatar')
+            domain = 'https://i0.wp.com/ba.alphafish.top';
+
+        return domain + real_path;
     }
 
     public static get_image_url(url: string, quality = 100, cdn?: string) {
