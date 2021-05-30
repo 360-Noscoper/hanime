@@ -93,6 +93,10 @@ export class HAnimeVideo {
         return this.video.next_random_hentai_video;
     }
 
+    public get is_censored() {
+        return this.video.hentai_video.is_censored;
+    }
+
     public get data() {
         return this.video;
     }
