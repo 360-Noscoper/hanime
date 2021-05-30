@@ -1,6 +1,6 @@
 {
   "name": "hanime",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "API for accessing hanime.tv",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
