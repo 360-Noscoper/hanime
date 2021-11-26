@@ -214,7 +214,7 @@ export class HAnimeAPI {
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), this.options.timeout);
 
-        const video_info = await fetch(`https://members.hanime.tv/rapi/v7/video?id=${slug}`, this.get_fetch_options({
+        const video_info = await fetch(`https://hanime.tv/api/v8/video?id=${slug}`, this.get_fetch_options({
             method: 'GET',
             signal: controller.signal
         }));
