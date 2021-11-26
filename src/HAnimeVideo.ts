@@ -5,6 +5,10 @@ import { HAnimeAPI } from './HAnimeAPI';
 export class HAnimeVideo {
     constructor(private video: APIVideo) {}
 
+    public get id() {
+        return this.video.hentai_video.id;
+    }
+
     public get titles() {
         return this.video.hentai_video.titles;
     }

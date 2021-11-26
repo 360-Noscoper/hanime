@@ -3,6 +3,7 @@ import { APITags } from './APITags';
 import { APIVideoInfo } from './APIVideoInfo';
 
 export type APIVideo = {
+    id: number,
     brand: {
         count: number,
         email: string | null,
