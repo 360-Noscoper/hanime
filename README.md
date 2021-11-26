@@ -83,7 +83,7 @@ const video = await api.get_video(results.videos[0]);
 * `name: string`
 * `slug: string`
 * `title: string`
-#### `franchise_videos: APIFranchiseVideoInfo[]`: other videos in thie franchise
+#### `franchise_videos: APIFranchiseVideoInfo[]`: other videos in this franchise
 #### `next_video: APIFranchiseVideoInfo`: next-up video
 #### `next_random_video: APIFranchiseVideoInfo`: random video
 #### `data`: raw data returned by API
